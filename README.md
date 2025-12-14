@@ -2,7 +2,7 @@
 <img width="686" height="672" alt="image" src="https://github.com/user-attachments/assets/503a66c1-b712-4a6a-95af-e284fe242e95" />
 
 # Step2: Use ADF to determine if it is stable.
-We test and find the dataset is not stationary.     
+I find the dataset is not stationary.     
 <img width="1092" height="120" alt="image" src="https://github.com/user-attachments/assets/e36af9bb-f458-4554-9678-bc8aeff760d9" />
 
 # Step3: Use difference to remove treand
@@ -16,5 +16,7 @@ Third peak: The curve shows another peak near Lag = 36.
 Since 12 * 2=24, 12 * 3=36, this strongly suggests that the data has a seasonality with a period of m=12.   
 <img width="2124" height="1284" alt="image" src="https://github.com/user-attachments/assets/3424796d-3f10-4e4d-9144-d1c33f067f51" />      
 So I use ```df['Seasonal Difference'] = df['Difference'] - df['Difference'].shift(12) ```     
-I first perform seasonal differencing, then we test it again with ADF, and plot an autocorrelation plot to determine seasonality (using data after removing trends and seasonality).     
+I first perform seasonal differencing, then we test it again with ADF,  ```(p-value): 0.000000```
+I draw a plot an autocorrelation plot to determine seasonality (using data after removing trends and seasonality).        
+<img width="2140" height="1274" alt="image" src="https://github.com/user-attachments/assets/637c0be1-2d48-458d-add2-24381c3d7518" />   
 
