@@ -15,4 +15,6 @@ Second peak: The curve shows another peak near Lag = 24.
 Third peak: The curve shows another peak near Lag = 36.       
 Since 12 * 2=24, 12 * 3=36, this strongly suggests that the data has a seasonality with a period of m=12.   
 <img width="2124" height="1284" alt="image" src="https://github.com/user-attachments/assets/3424796d-3f10-4e4d-9144-d1c33f067f51" />      
-So we use ```df['Seasonal Difference'] = df['Difference'] - df['Difference'].shift(12) ``` 
+So I use ```df['Seasonal Difference'] = df['Difference'] - df['Difference'].shift(12) ```     
+I first perform seasonal differencing, then we test it again with ADF, and plot an autocorrelation plot to determine seasonality (using data after removing trends and seasonality).     
+
