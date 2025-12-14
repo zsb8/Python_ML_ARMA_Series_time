@@ -16,7 +16,15 @@ Third peak: The curve shows another peak near Lag = 36.
 Since 12 * 2=24, 12 * 3=36, this strongly suggests that the data has a seasonality with a period of m=12.   
 <img width="2124" height="1284" alt="image" src="https://github.com/user-attachments/assets/3424796d-3f10-4e4d-9144-d1c33f067f51" />      
 So I use ```df['Seasonal Difference'] = df['Difference'] - df['Difference'].shift(12) ```     
-I first perform seasonal differencing, then we test it again with ADF,  ```(p-value): 0.000000```
-I draw a plot an autocorrelation plot to determine seasonality (using data after removing trends and seasonality).        
+I first perform seasonal differencing, then we test it again with ADF,  ```(p-value): 0.000000```.       
+Then I draw a plot an autocorrelation plot to determine seasonality (using data after removing trends and seasonality).        
 <img width="2140" height="1274" alt="image" src="https://github.com/user-attachments/assets/637c0be1-2d48-458d-add2-24381c3d7518" />   
+
+# Step5: Train the ARMA model.
+<img width="1418" height="1042" alt="image" src="https://github.com/user-attachments/assets/d3fc8cfe-fd72-4f86-bab6-5c245583d411" />
+
+# Step6: Use  fitted model to predict passengers number.
+Predicted_Passengers
+<img width="600" height="604" alt="image" src="https://github.com/user-attachments/assets/738c9ff6-a0e0-45c9-8b5e-1bfb6fb32b6b" />
+
 
