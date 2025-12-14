@@ -26,7 +26,9 @@ Then I draw a plot an autocorrelation plot to determine seasonality (using data 
 # Step6: Use  fitted model to predict passengers number
 <img width="600" height="604" alt="image" src="https://github.com/user-attachments/assets/738c9ff6-a0e0-45c9-8b5e-1bfb6fb32b6b" />             
 
-Draw a plot to compare the predicted values with the actual values.      
+
+Draw a plot to compare the predicted values with the actual values.    
+
 <img width="1428" height="707" alt="image" src="https://github.com/user-attachments/assets/a950c958-0fe9-4241-9e6b-c921d91926bc" />         
 Calculate the MAPE:  
 <img width="2490" height="188" alt="image" src="https://github.com/user-attachments/assets/f233475a-1323-4bb8-a265-f38ae45e983f" />
